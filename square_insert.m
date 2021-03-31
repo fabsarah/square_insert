@@ -1,4 +1,10 @@
 function outmat = square_insert(input,missing)
+% A function for inserting zeros into a square matrix while preserving its
+% shape. 
+% Inputs:
+%   input: a square matrix    
+%   missing: a vector of missing values (ie. the rows/columns you want to
+%   insert into the data)
 %% Step 1: Get an index!
 target = length(input)+length(missing);
 index = nan(target,1);%initialize an index vector the size we want
